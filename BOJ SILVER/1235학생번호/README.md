@@ -25,7 +25,7 @@
   ex) String substring(int begin)
       String substring(int begin, int end)
 
--문자열 중복 확인방법
+- 문자열 중복 확인방법
     Set 사용 -> Set<E> 객체명 = new HashSet<E>();
      
      Set은 List와는 다르게 객체(데이터)를 중복해서 저장할 수 없다. 
