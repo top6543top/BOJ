@@ -60,7 +60,8 @@
         			System.out.println();
         		}
         	}
-    		   ```
+    		```
+
   
         - ArrayList안에 또다른 ArrayList 생성으로 각 노드에 어떻게 연결되어 있는지 표시
   
