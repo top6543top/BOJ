@@ -69,26 +69,26 @@
   
   2) 탐색방식
      1. DFS(스택방식 FILO이용)
-        ```c
-        static void dfs(int nodeIndex) {
-		// 방문 처리
-		vistied[nodeIndex] = true;
-		
-		// 방문 노드 출력
-		System.out.print(nodeIndex + " -> ");
-		
-		// 방문한 노드에 인접한 노드 찾기
-		for (int node : graph[nodeIndex]) {
-			// 인접한 노드가 방문한 적이 없다면 DFS 수행
-			if(!vistied[node]) {
-				dfs(node);
+	```c
+ 	        static void dfs(int nodeIndex) {
+			// 방문 처리
+			vistied[nodeIndex] = true;
+			
+			// 방문 노드 출력
+			System.out.print(nodeIndex + " -> ");
+			
+			// 방문한 노드에 인접한 노드 찾기
+			for (int node : graph[nodeIndex]) {
+				// 인접한 노드가 방문한 적이 없다면 DFS 수행
+				if(!vistied[node]) {
+					dfs(node);
+				}
 			}
 		}
-	}
-	```
+ 	```
 
 
-     이런식으로 재귀함수를 통해 방문하지 않은 노드를 찾아가는 방법이 있고
+     	- 이런식으로 재귀함수를 통해 방문하지 않은 노드를 찾아가는 방법이 있고
 
 
 	  ```c
