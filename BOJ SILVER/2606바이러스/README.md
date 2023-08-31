@@ -69,7 +69,6 @@
   
   2) 탐색방식
      1. DFS(스택방식 FILO이용)
-        
         ```c
         static void dfs(int nodeIndex) {
 		// 방문 처리
@@ -86,41 +85,40 @@
 			}
 		}
 	}
-
- 	 ```
+	```
 
 
      이런식으로 재귀함수를 통해 방문하지 않은 노드를 찾아가는 방법이 있고
 
 
-  ```c
-  public static void main(String[] args) {
-		
-		// 시작 노드를 스택에 넣어줍니다.
-		stack.push(1);
-		// 시작 노드 방문처리
-		vistied[1] = true;
-		
-		// 스택이 비어있지 않으면 계속 반복
-		while(!stack.isEmpty()) {
+	  ```c
+	  public static void main(String[] args) {
 			
-			// 스택에서 하나를 꺼냅니다.
-			int nodeIndex = stack.pop();
+			// 시작 노드를 스택에 넣어줍니다.
+			stack.push(1);
+			// 시작 노드 방문처리
+			vistied[1] = true;
 			
-			// 방문 노드 출력
-			System.out.print(nodeIndex + " -> ");
-			
-			// 꺼낸 노드와 인접한 노드 찾기
-			for (int LinkedNode : graph[nodeIndex]) {
-				// 인접한 노드를 방문하지 않았을 경우에 스택에 넣고 방문처리 
-				if(!vistied[LinkedNode]) {
-					stack.push(LinkedNode);
-					vistied[LinkedNode] = true;
+			// 스택이 비어있지 않으면 계속 반복
+			while(!stack.isEmpty()) {
+				
+				// 스택에서 하나를 꺼냅니다.
+				int nodeIndex = stack.pop();
+				
+				// 방문 노드 출력
+				System.out.print(nodeIndex + " -> ");
+				
+				// 꺼낸 노드와 인접한 노드 찾기
+				for (int LinkedNode : graph[nodeIndex]) {
+					// 인접한 노드를 방문하지 않았을 경우에 스택에 넣고 방문처리 
+					if(!vistied[LinkedNode]) {
+						stack.push(LinkedNode);
+						vistied[LinkedNode] = true;
+					}
 				}
 			}
 		}
-	}
-  ```
+	  ```
 
   이런식으로 첫노드를 스택에 넣은 다음 스택에서 꺼내고 넣음으로써 DFS를 수행하는 방법이 있다.
 
