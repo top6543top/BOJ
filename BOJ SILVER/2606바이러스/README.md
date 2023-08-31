@@ -30,9 +30,11 @@
 		}
 	}
         ```
+  
         - 이중배열을 통해 어디에 연결되어 있는지 표기
   
       2. 인접리스트
+  
         ```c
          public static void main(String[] args) {
         		int[][] edges = new int[][] {
@@ -58,12 +60,14 @@
         		}
         	}
         ```
+  
         - ArrayList안에 또다른 ArrayList 생성으로 각 노드에 어떻게 연결되어 있는지 표시
   
           ArrayList<Integer>[] list = new ArrayList[n + 1]; 이런 방식으로 구현가능
   
   2) 탐색방식
      1. DFS(스택방식 FILO이용)
+        
         ```c
         static void dfs(int nodeIndex) {
 		// 방문 처리
@@ -116,6 +120,7 @@
   이런식으로 첫노드를 스택에 넣은 다음 스택에서 꺼내고 넣음으로써 DFS를 수행하는 방법이 있다.
 
   2. BFS(Queue FIFO이용)
+     
      ```c
       int start = 1; // 시작 노드
         // 큐 구현
