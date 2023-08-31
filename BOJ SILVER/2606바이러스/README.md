@@ -36,7 +36,7 @@
 
 
       2. 인접리스트
-          ```c
+```c
 	      public static void main(String[] args) {
 	        		int[][] edges = new int[][] {
 	        			{1, 2}, {1, 3}, {1, 4}, {2, 3}, {2, 5}, {4, 5}
@@ -60,7 +60,7 @@
 	        			System.out.println();
 	        		}
 		}
-  		```
+```
 
   
         - ArrayList안에 또다른 ArrayList 생성으로 각 노드에 어떻게 연결되어 있는지 표시
