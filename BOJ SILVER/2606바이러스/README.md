@@ -7,7 +7,7 @@
 - 공부한 점
   1) 그래프 구현방식
       1. 인접그래프
-        	```c
+     ```c
         public static void main(String[] args) {
 		int[][] edges = new int[][] {
 			{1, 2}, {1, 3}, {1, 4}, {2, 3}, {2, 5}, {4, 5}
@@ -30,7 +30,7 @@
 			System.out.println();
 		}
 	  }
-		```
+	```
 
   - 이중배열을 통해 어디에 연결되어 있는지 표기
 
