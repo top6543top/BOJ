@@ -36,6 +36,11 @@
 
 
       2. 인접리스트
+      3. 
+	-  ArrayList안에 또다른 ArrayList 생성으로 각 노드에 어떻게 연결되어 있는지 표시
+  
+          ArrayList<Integer>[] list = new ArrayList[n + 1]; 이런 방식으로 구현가능
+    
 	```java
 			      public static void main(String[] args) {
 	        		int[][] edges = new int[][] {
@@ -62,9 +67,6 @@
 		}
 	```
 
-        - ArrayList안에 또다른 ArrayList 생성으로 각 노드에 어떻게 연결되어 있는지 표시
-  
-          ArrayList<Integer>[] list = new ArrayList[n + 1]; 이런 방식으로 구현가능
   
   2) 탐색방식
      1. DFS(스택방식 FILO이용)
@@ -72,7 +74,7 @@
 	- 이런식으로 재귀 함수를 이용하는 방법이 있다
 
 	```java
-	 	        static void dfs(int nodeIndex) {
+	      	static void dfs(int nodeIndex) {
 			// 방문 처리
 			vistied[nodeIndex] = true;
 			
