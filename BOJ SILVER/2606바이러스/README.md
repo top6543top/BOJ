@@ -85,14 +85,14 @@
 				}
 			}
 		}
+ 
  	```
 
 
      	- 이런식으로 재귀함수를 통해 방문하지 않은 노드를 찾아가는 방법이 있고
 
-
-	  ```c
-	  public static void main(String[] args) {
+	```c
+   public static void main(String[] args) {
 			
 			// 시작 노드를 스택에 넣어줍니다.
 			stack.push(1);
@@ -118,7 +118,7 @@
 				}
 			}
 		}
-	  ```
+ 	```
 
   이런식으로 첫노드를 스택에 넣은 다음 스택에서 꺼내고 넣음으로써 DFS를 수행하는 방법이 있다.
 
