@@ -36,8 +36,8 @@
 
 
       2. 인접리스트
-```java
-	      public static void main(String[] args) {
+	```java
+			      public static void main(String[] args) {
 	        		int[][] edges = new int[][] {
 	        			{1, 2}, {1, 3}, {1, 4}, {2, 3}, {2, 5}, {4, 5}
 	        		};
@@ -60,7 +60,7 @@
 	        			System.out.println();
 	        		}
 		}
-```
+	```
 
         - ArrayList안에 또다른 ArrayList 생성으로 각 노드에 어떻게 연결되어 있는지 표시
   
@@ -71,8 +71,8 @@
 
 	- 이런식으로 재귀 함수를 이용하는 방법이 있다
 
-```java
- 	        static void dfs(int nodeIndex) {
+	```java
+	 	        static void dfs(int nodeIndex) {
 			// 방문 처리
 			vistied[nodeIndex] = true;
 			
@@ -87,9 +87,9 @@
 				}
 			}
 		}
- ```
-```java
-   public static void main(String[] args) {
+	```
+	```java
+		   public static void main(String[] args) {
 			
 			// 시작 노드를 스택에 넣어줍니다.
 			stack.push(1);
@@ -115,14 +115,14 @@
 				}
 			}
 		}
-```
+	```
 
   이런식으로 첫노드를 스택에 넣은 다음 스택에서 꺼내고 넣음으로써 DFS를 수행하는 방법이 있다.
 
   2. BFS(Queue FIFO이용)
      
-```java
-      int start = 1; // 시작 노드
+	```java
+	      int start = 1; // 시작 노드
         // 큐 구현
         Queue<Integer> queue = new LinkedList<>();
             queue.add(start);
@@ -143,6 +143,6 @@
                         visited[i] = true;
                     }
                 }
-```
+	```
 
      시작 노드를 집어 넣고 그 주위에 있는 노드들을 큐에 집어 넣은다음 진행한다.
