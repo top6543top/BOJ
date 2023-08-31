@@ -69,6 +69,9 @@
   
   2) 탐색방식
      1. DFS(스택방식 FILO이용)
+
+	- 이런식으로 재귀 함수를 이용하는 방법이 있다
+
 	```c
  	        static void dfs(int nodeIndex) {
 			// 방문 처리
@@ -87,9 +90,6 @@
 		}
  
  	```
-
-
-- 이런식으로 재귀함수를 통해 방문하지 않은 노드를 찾아가는 방법이 있고
 
 	```c
    public static void main(String[] args) {
