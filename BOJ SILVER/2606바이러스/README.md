@@ -36,7 +36,6 @@
 
 
       2. 인접리스트
-  
         ```c
          public static void main(String[] args) {
         		int[][] edges = new int[][] {
