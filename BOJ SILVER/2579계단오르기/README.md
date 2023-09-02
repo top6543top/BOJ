@@ -25,24 +25,26 @@
   ex)
   ```java
     import java.util.*;
-
-public class Main{
-	public static void main(String[] args){
-		Scanner s=new Scanner(System.in);
-		
-		int n=s.nextInt();
-		int[]a=new int[n+2];
-		for(int i=1;i<=n;i++) a[i]=s.nextInt();
-		
-		int[]d=new int[n+2];
-		d[1]=a[1];
-		d[2]=a[1]+a[2];
-		for(int i=3;i<=n;i++) 
-			d[i]=Math.max(d[i-2],a[i-1]+d[i-3])+a[i];
-		
-		System.out.print(d[n]);
+	public class Main{
+		public static void main(String[] args){
+			Scanner s=new Scanner(System.in);
+			
+			int n=s.nextInt();
+			int[]a=new int[n+2];
+			for(int i=1;i<=n;i++) a[i]=s.nextInt();
+			
+			int[]d=new int[n+2];
+			d[1]=a[1];
+			d[2]=a[1]+a[2];
+			for(int i=3;i<=n;i++) 
+				d[i]=Math.max(d[i-2],a[i-1]+d[i-3])+a[i];
+			
+			System.out.print(d[n]);
+			}
 	}
-}
   ```
+
+
+
 
   이런식으로 새로운 d[] 배열을 만들어서 전에 값을 저장해 풀이를 최적화 한다.
