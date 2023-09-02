@@ -12,7 +12,9 @@
  2. 부분의 최적해가 모이면 전체의 최적해가 된다.
  3. 정렬을 잘해야한다.
  
-  
+
+
+
 import java.util.Scanner;
 
 class Main {
