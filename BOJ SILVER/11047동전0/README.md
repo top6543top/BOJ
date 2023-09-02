@@ -14,7 +14,7 @@
  
 
 
-
+```java
 import java.util.Scanner;
 
 class Main {
@@ -48,6 +48,11 @@ class Main {
 	}
  
 }
+```
+
+
+
+
 
 - 이런 식으로 짜면 더 좋은 방식으로 짤 수 있다.
 
