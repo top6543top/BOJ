@@ -58,21 +58,13 @@
 
 
 
-
-
-
-
-   ```java
-       public <T> T genericMethod(T o) {	// 제네릭 메소드
+    ```java
+      public <T> T genericMethod(T o) {	// 제네릭 메소드
         }
-   ```
-
+    ```
 
 
       
-
-
-
       메소드는 이렇게 생성한다.
 
   2) 힙, 우선순위 큐
