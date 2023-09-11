@@ -65,12 +65,11 @@
    ```java
        public <T> T genericMethod(T o) {	// 제네릭 메소드
         }
-       ```
+   ```
 
 
 
       
-
 
 
 
