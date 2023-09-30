@@ -7,10 +7,10 @@
 - 공부한 점
 
   ```java
-  Queue<ArrayList<int[]>> q=new LinkedList<>();
-  //여러개의 시작점이 들어온다고 생각하여 Queue 안에 ArrayList<int[]>를 집어 넣었다.
-  Queue<int[]> q=new LinkedList<>();
-  // 이렇게 푸는 방법이 훨씬 빠르다.
+    Queue<ArrayList<int[]>> q=new LinkedList<>();
+    //여러개의 시작점이 들어온다고 생각하여 Queue 안에 ArrayList<int[]>를 집어 넣었다.
+    Queue<int[]> q=new LinkedList<>();
+    // 이렇게 푸는 방법이 훨씬 빠르다.
   ```
 
  몇 일이 걸리는지 순차적인 날짜가 중요함으로 int[] 배열에 x,y좌표 + 걸리는 날짜를 갖게 히주면 된다.
