@@ -9,7 +9,7 @@
   ```java
   Queue<ArrayList<int[]>> q=new LinkedList<>();
   //여러개의 시작점이 들어온다고 생각하여 Queue 안에 ArrayList<int[]>를 집어 넣었다.
- Queue<int[]> q=new LinkedList<>();
+  Queue<int[]> q=new LinkedList<>();
   // 이렇게 푸는 방법이 훨씬 빠르다.
   ```
 
